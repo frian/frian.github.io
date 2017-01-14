@@ -1,0 +1,11 @@
+# Site Settings
+title: jekyll bootstrap template
+email: a@frian.org
+baseurl: ""
+url: "http://frian.github.io/jekyll-bootstrap-template"
+# Build Settings
+sass:
+  sass_dir: _sass
+include: ['_pages']
+kramdown:
+  input: GFM
