@@ -1,8 +1,8 @@
 # Site Settings
-title: jekyll bootstrap template
+title: frian@github
 email: a@frian.org
 baseurl: ""
-url: "http://frian.github.io/jekyll-bootstrap-template"
+url: "http://frian.github.io/"
 # Build Settings
 sass:
   sass_dir: _sass

@@ -10,19 +10,22 @@
 
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
                         </button>
-                        <span class="visible-xs navbar-brand">Topbar menu</span>
+                        <span class="visible-xs navbar-brand">{{ site.title }}</span>
                     </div>
 
                     <div class="navbar-collapse collapse sidebar-navbar-collapse">
-                        <span class="hidden-xs navbar-brand">Sidebar menu</span>
+                        <span class="hidden-xs navbar-brand">{{ site.title }}</span>
                         <ul class="nav navbar-nav" id="sidenav01">
-                        <li><a href="#">Normalmenu</a></li>
-                        <li><a href="">PreferencesMenu</a></li>
+
+                            {% for p in site.pages %}
+                            <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+                            <!-- <li><a href="#">fresh dark syntax</a></li> -->
+                            {% endfor %}
                         </ul>
                     </div><!--/.nav-collapse -->
 

@@ -9,8 +9,27 @@ $border-color: #040;
 
 .sidebar, .navbar-header, .navbar-collapse {
   background-color: $sidebar-bg;
-  border-color: #080808;
+  border-color: $border-color;
 }
+
+
+.navbar-default .navbar-nav > li > a {
+    color: #ddd;
+    line-height: 160%;
+    font-size: 150%;
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+    color: #eee;
+    background-color: #050;
+}
+
+
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: $border-color;
+}
+
 
 .navbar-default .navbar-brand {
     color: #ddd;
@@ -25,6 +44,9 @@ $border-color: #040;
     text-shadow: none;
 }
 
+.navbar-collapse, .navbar-nav > li > a {
+    color: red;
+}
 
 .navbar-nav {
     margin: 0;
@@ -33,7 +55,7 @@ $border-color: #040;
 .navbar-default {
     background-color: $sidebar-bg;
     background-image: none;
-    border-color: #080808;
+    border-color: $border-color;
 }
 
 .navbar-default .navbar-toggle {
@@ -41,7 +63,6 @@ $border-color: #040;
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    // color: red;
     background-color: $border-color;
 }
 
@@ -51,9 +72,6 @@ $border-color: #040;
 
 .navbar-collapse {
     padding: 0;
-}
-.navbar-collapse ul {
-    background-color: #222;
 }
 
 
@@ -82,25 +100,28 @@ ul {
         float: none;
     }
 
-    .sidebar-navbar-collapse ul li a {
-        color: red;
-    }
-
     .navbar {
         display: table-cell;
         vertical-align: middle;
     }
 
     .content {
-        color: red;
         left: 25%;
+    }
+
+    .navbar-default .navbar-brand {
+        font-size: 200%;
+    }
+
+    .navbar-default .navbar-nav > li > a {
+        font-size: 200%;
+        line-height: 120%;
     }
 }
 
 @media (min-width: 992px) {
     .content {
-        color: black;
         left: 0;
+        padding: 50px 25px;
     }
-
 }
