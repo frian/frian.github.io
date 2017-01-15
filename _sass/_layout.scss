@@ -3,9 +3,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700');
 
+@import url('https://fonts.googleapis.com/css?family=Quattrocento:400,700');
+
 h1, h2, h3, h4, h5 {
-    font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
-    // font-family: Copperplate / Copperplate Gothic Light, sans-serif;
+    font-family: ‘Quattrocento’, serif;
+    // font-weight: bold;
 }
 
 $sidebar-bg: #060;
@@ -14,87 +16,95 @@ $border-color: #040;
 
 
 .sidebar {
+    position: fixed;
     padding: 0;
-    position: absolute;
     top: 0;
+    left: 0;
     height: 50px;
     width: 100%;
-    border: 2px solid yellow!important;
     font-family: 'Muli', sans-serif;
     font-weight: 300;
-}
 
-.sidebar, .navbar-header, .navbar-collapse {
-  background-color: $sidebar-bg;
-  border-color: $border-color;
 }
 
 
+// navbar
+.navbar-default {
+    border-color: $border-color;
+    background-color: $sidebar-bg;
+    background-image: none;
+    border-radius: 0;
+}
+
+//
+// -- top navbar links
+//
 .navbar-default .navbar-nav > li > a {
     color: #ddd;
+    padding-left: 30px;
     line-height: 160%;
     font-size: 150%;
 }
 
+// -- hover
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
     color: #eee;
     background-color: #050;
 }
 
 
-
+// - navbar border
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border-color: $border-color;
 }
 
 
+//
+// -- navbar brand
+//
 .navbar-default .navbar-brand {
     color: #ddd;
     font-size: 150%;
     font-weight: 600;
 }
 
+// -- hover
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
     color: #eee;
 }
 
 
+// -- remove text shaadow
 .navbar-brand, .navbar-nav > li > a {
     text-shadow: none;
 }
 
-.navbar-collapse, .navbar-nav > li > a {
-}
 
-.navbar-nav {
-    margin: 0;
-}
-
-.navbar-default {
-    background-color: $sidebar-bg;
-    background-image: none;
-    border-color: $border-color;
-}
-
+//
+// -- navbar toggle menu button
+//
 .navbar-default .navbar-toggle {
     border-color: $border-color;
 }
 
+// -- hover
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background-color: $border-color;
 }
 
+// -- hamburger menu button
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #ddd;
 }
 
+
+// -- full width sidebar menu items
 .navbar-collapse {
     padding: 0;
 }
 
 
 ul {
-    position: relative;
     width: 100%;
 }
 
@@ -128,15 +138,10 @@ pre {
     }
 
     .sidebar {
-        position: fixed;
-        top: 0;
         right: 0;
-        bottom: 0;
-        z-index: 1000;
         background-color: #000;
         display: table;
         height: 100%;
-
         width: 25%;
     }
 

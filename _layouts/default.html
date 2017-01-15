@@ -9,7 +9,7 @@
                 {{ content }}
             </div>
 
-            <div class="sidebar sidebar-inverse col-sm-3 col-sm-offset-9">
+            <div class="sidebar col-sm-3 col-sm-offset-9">
                 <div class="navbar navbar-default" role="navigation">
 
                     <div class="navbar-header">
@@ -28,8 +28,7 @@
 
                             {% for p in site.pages %}
                                 {% if p.name contains '.md' %}
-
-                                        <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+                                    <li><a href="{{ p.url }}">{{ p.title }}</a></li>
                                 {% endif %}
                             {% endfor %}
                         </ul>
