@@ -2,14 +2,14 @@
 <html lan="en">
 {% include html_head.html %}
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
 
-            <div class="content col-md-9">
+            <div class="content col-sm-9">
                 {{ content }}
             </div>
 
-            <div class="sidebar sidebar-inverse col-sm-3 col-md-offset-9">
+            <div class="sidebar sidebar-inverse col-sm-3 col-sm-offset-9">
                 <div class="navbar navbar-default" role="navigation">
 
                     <div class="navbar-header">
@@ -23,12 +23,13 @@
                     </div>
 
                     <div class="navbar-collapse collapse sidebar-navbar-collapse">
-                        <span class="hidden-xs navbar-brand">{{ site.title }}</span>
+                        <span class="hidden-xs navbar-brand top-brand">{{ site.title }}</span>
                         <ul class="nav navbar-nav" id="sidenav01">
 
                             {% for p in site.pages %}
                                 {% if p.name contains '.md' %}
-                                    <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+
+                                        <li><a href="{{ p.url }}">{{ p.title }}</a></li>
                                 {% endif %}
                             {% endfor %}
                         </ul>
