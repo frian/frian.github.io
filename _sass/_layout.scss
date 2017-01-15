@@ -1,16 +1,41 @@
-h1 { color: white }
 
-header {
-	background: black;
-	padding: 0px 15px;
-	text-align: center;
-	margin: 50px 0 0;
-	height: 50vh;
-    display: flex;
-	justify-content: center;
-    align-items: center;
+.sidebar, .navbar-header, .navbar-collapse {
+  background-color: #000;
 }
 
-.container {
-	max-width: $content-width;
+.sidebar {
+    padding: 0;
+}
+
+.navbar-collapse {
+    padding: 0;
+}
+.navbar-collapse ul {
+    background-color: #222;
+}
+
+.navbar-nav {
+    margin: 0;
+}
+
+ul {
+    position: relative;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 1000;
+        display: block;
+        background-color: #000;
+    }
+
+    .sidebar-navbar-collapse ul li {
+        float: none;
+    }
 }

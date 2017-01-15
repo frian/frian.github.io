@@ -2,11 +2,38 @@
 <html lan="en">
 {% include html_head.html %}
 <body>
-        {% include topbar.html %}
-        {% include header.html %}
+    <div class="container-fluid">
+      <div class="row">
 
-        <main class="container">
-            {{ content }}
-        </main>
-</body>
+        <div class="col-md-3 sidebar sidebar-inverse">
+            <div class="navbar navbar-inverse" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <span class="visible-xs navbar-brand">Topbar menu</span>
+                </div>
+
+                <div class="navbar-collapse collapse sidebar-navbar-collapse">
+                    <span class="hidden-xs navbar-brand">Sidebar menu</span>
+                    <ul class="nav navbar-nav" id="sidenav01">
+                    <li><a href="#">Normalmenu</a></li>
+                    <li><a href="">PreferencesMenu</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+
+            </div>
+        </div>
+
+        <div class="col-md-9 col-md-offset-3 content">
+          Main Content
+        </div>
+
+      </div>
+    </div>
+
+        </body>
 </html>
