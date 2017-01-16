@@ -5,10 +5,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Quattrocento:400,700');
 
-h1, h2, h3, h4, h5 {
-    font-family: ‘Quattrocento’, serif;
-    // font-weight: bold;
-}
 
 $sidebar-bg: #060;
 
@@ -44,6 +40,8 @@ $border-color: #040;
     padding-left: 30px;
     line-height: 160%;
     font-size: 150%;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 // -- hover
@@ -65,7 +63,7 @@ $border-color: #040;
 .navbar-default .navbar-brand {
     color: #ddd;
     font-size: 150%;
-    font-weight: 600;
+    // font-weight: 600;
 }
 
 // -- hover
@@ -75,7 +73,7 @@ $border-color: #040;
 
 
 // -- remove text shaadow
-.navbar-brand, .navbar-nav > li > a {
+.navbar-brand, .navbar-default .navbar-nav > li > a {
     text-shadow: none;
 }
 
@@ -103,6 +101,9 @@ $border-color: #040;
     padding: 0;
 }
 
+.navbar-default .navbar-collapse > li > a {
+    color: red;
+}
 
 ul {
     width: 100%;
@@ -113,10 +114,11 @@ ul {
     padding: 10px;
     font-family: 'Muli', sans-serif;
     font-size: 150%;
+    background-color: #eee;
 }
 
 pre {
-    font-size: 100%;
+    // font-size: 100%;
 }
 
 
@@ -133,12 +135,15 @@ pre {
         padding: 0 15px;
         width: 100%;
         text-align: center;
-        font-family: 'Muli', sans-serif;
-        // font-weight: 300;
+        // font-family: 'Muli', sans-serif;
+        font-family: ‘Quattrocento’, serif;
+        font-weight: 400;
     }
 
     .sidebar {
+        // position: absolute;
         right: 0;
+        left: auto;
         background-color: #000;
         display: table;
         height: 100%;
@@ -164,9 +169,12 @@ pre {
     }
 
     .navbar-default .navbar-nav > li > a {
-        font-size: 200%;
+        font-size: 140%;
         line-height: 120%;
+        padding-left: 10px;
     }
+
+
 }
 
 @media (min-width: 992px) {
@@ -179,5 +187,9 @@ pre {
 @media (min-width: 1200px) {
     .navbar-default .navbar-brand {
         font-size: 300%;
+    }
+
+    pre {
+        font-size: 100%;
     }
 }
