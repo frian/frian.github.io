@@ -5,6 +5,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Quattrocento:400,700');
 
+body {
+    background-color: #eee;
+}
 
 $sidebar-bg: #060;
 
@@ -114,11 +117,6 @@ ul {
     padding: 10px;
     font-family: 'Muli', sans-serif;
     font-size: 150%;
-    background-color: #eee;
-}
-
-pre {
-    // font-size: 100%;
 }
 
 
@@ -130,18 +128,14 @@ pre {
         z-index: 10000;
         top: 0;
         right: 0px;
-        height: 100px;
-        line-height: 100px;
-        padding: 0 15px;
+        padding: 20px 0;
         width: 100%;
         text-align: center;
-        // font-family: 'Muli', sans-serif;
-        font-family: ‘Quattrocento’, serif;
+        // font-family: ‘Quattrocento’, serif;
         font-weight: 400;
     }
 
     .sidebar {
-        // position: absolute;
         right: 0;
         left: auto;
         background-color: #000;
@@ -165,7 +159,7 @@ pre {
     }
 
     .navbar-default .navbar-brand {
-        font-size: 180%;
+        // font-size: 180%;
     }
 
     .navbar-default .navbar-nav > li > a {
@@ -186,10 +180,16 @@ pre {
 
 @media (min-width: 1200px) {
     .navbar-default .navbar-brand {
-        font-size: 300%;
+        // font-size: 300%;
     }
 
     pre {
         font-size: 100%;
+    }
+
+    .navbar-default .navbar-nav > li > a {
+        font-size: 180%;
+        line-height: 120%;
+        padding-left: 20px;
     }
 }

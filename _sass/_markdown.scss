@@ -1,11 +1,16 @@
+
+// -- code blocks
 .markdown-body pre.highlight {
-    background-color: #222;
-    color: #ddd;
-    margin-left: 20px;
-    // padding: 5px 10px;
+    color:                   #ddd;
+    margin:           20px 0 30px;
+    background-color:        #222;
 }
 
+//
+// -- headings
+//
 
+// -- common
 .markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6 {
     font-weight: 400;
     line-height: 1.25;
@@ -14,19 +19,21 @@
     font-family: ‘Quattrocento’, serif;
 }
 
+// -- h1
 .markdown-body h1 {
     color: #222;
     border-bottom: 1px solid #080;
     padding : 10px 0 10px;
 }
 
+// -- h2
 .markdown-body h2 {
     margin: 30px 0;
-    // text-decoration: underline;
     border-bottom: 1px solid #080;
     display: inline-block;
 }
 
+// -- h3
 .markdown-body h3 {
     margin: 30px 0;
     margin-bottom: 30px;
@@ -34,21 +41,29 @@
 }
 
 
-.markdown-body pre { margin: 20px 0 30px }
+// -- paragraph
+.markdown-body p {
+    margin-left: 20px;
+}
 
-.markdown-body p { margin-left: 20px;}
 
-
+// -- links
 .markdown-body a {
     color: #040;
 }
 
-
+// -- image
 .markdown-body img {
     width: 100%;
 }
 
+.markdown-body img.thumb {
 
+    margin-top: 20px;
+    margin-left: -15px;
+}
+
+// -- article heading
 .markdown-body .article-heading {
     margin-left: 20px;
     font-size: 120%;
@@ -56,10 +71,15 @@
 }
 
 
+@media (min-width: 768px) {
 
+    .markdown-body img.thumb {
+        width: auto;
+    }
+}
 @media (min-width: 1200px) {
 
-    .markdown-body pre {
+    .markdown-body pre.highlight {
         padding: 20px 30px;
     }
 }

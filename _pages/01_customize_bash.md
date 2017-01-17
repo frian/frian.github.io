@@ -12,6 +12,8 @@ permalink: /customize-bash/
 configurable and extendable bash customisation
 </div>
 
+![php](/img/01-customize-bash.png)
+
 ## features
 
 - colored prompt : local, ssh, telnet, root
