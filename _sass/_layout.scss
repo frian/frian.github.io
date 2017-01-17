@@ -8,6 +8,123 @@
 
 @import "compass/css3/images";
 @import "compass/css3/transform";
+@import "compass/css3/border-radius";
+
+.indexnav {
+    color: #eee;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 2px solid #ccc;
+    // border-top: 1px solid #FF7000;
+    font-size: 150%;
+    margin-top: 20px;
+    // background: rgba(255,128,0, 0.2);
+    // @include background-image(
+    //   linear-gradient(
+    //       rgba(255,255,255, 0.05),
+    //       rgba(0,0,0, 0.05)
+    //   )
+    // );
+    display: table;
+    width: 100%;
+
+    // padding-bottom: 30px;
+
+    @include border-bottom-radius(40px);
+}
+
+.indexnav > ul {
+    display: table;
+    height: 100%;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.indexnav > ul > li {
+    display: table-cell;
+    height: 100%;
+
+}
+
+.indexnav > ul > li > a {
+    display: block;
+    color: #ccc;
+    font-family: 'Muli', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    // border-top: 2px solid #ddd;
+    // @include border-top-radius(50px);
+    // @include border-right-radius(50px);
+}
+
+.indexnav > ul > li:first-child > a {
+    border-top: 2px solid transparent;
+    @include border-top-radius(50px);
+    border-left: 2px solid transparent;
+    @include border-left-radius(50px);
+}
+
+.indexnav > ul > li:nth-child(2) > a {
+    border-top: 2px solid transparent;
+    // @include border-top-radius(50px);
+    // border-right: 2px solid transparent;
+    // @include border-right-radius(50px);
+}
+
+.indexnav > ul > li:nth-child(3) > a {
+    border-top: 2px solid transparent;
+    @include border-top-radius(50px);
+    border-right: 2px solid transparent;
+    @include border-right-radius(50px);
+}
+
+.indexnav > ul > li:first-child > a:hover {
+
+    // background: rgba(255,128,0, 0.2);
+    // @include background-image(
+    //   linear-gradient(
+    //       rgba(255,255,255, 0.1),
+    //       rgba(255,255,255, 0.05)
+    //   )
+    // );
+    // @include border-left-radius(50px);
+    // border: 0;
+    border-top: 2px solid #ddd;
+    @include border-top-radius(50px);
+    border-left: 2px solid #ddd;
+    @include border-left-radius(50px);
+    // @include border-bottom-left-radius(50px);
+}
+
+.indexnav > ul > li:nth-child(2) > a:hover {
+
+    // background-color: #222;
+    // @include background-image(
+    //   linear-gradient(
+    //       rgba(255,255,255, 0.1),
+    //       rgba(255,255,255, 0.05)
+    //   )
+    // );
+    border-top: 2px solid #ddd;
+    @include border-top-radius(40px);
+    // border: 0;
+    // @include border-bottom-left-radius(50px);
+}
+
+.indexnav > ul > li:nth-child(3) > a:hover {
+
+    // background: rgba(255,128,0, 0.2);
+    // @include background-image(
+    //   linear-gradient(
+    //       rgba(255,255,255, 0.1),
+    //       rgba(255,255,255, 0.05)
+    //   )
+    // );
+    border-top: 2px solid #ddd;
+    @include border-top-radius(50px);
+    border-right: 2px solid #ddd;
+    @include border-right-radius(50px);
+}
 
 
 .pos-relative {
@@ -27,6 +144,12 @@
     margin-top:  50px;
     // margin-left: $flowerContainerMargin;
     // border: 10px solid red!important;
+    @include background-image(
+      linear-gradient(
+          rgba(255,255,255, 0.2),
+          rgba(255,255,255, 0.2)
+      )
+    );
 }
 
 .indexPetal {
@@ -45,7 +168,7 @@
 
     @include background-image(
       linear-gradient(
-          rgba(255,255,255, 0.2),
+          rgba(255,255,255, 0.4),
           rgba(255,255,255, 0.2)
       )
     );
