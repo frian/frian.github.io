@@ -1,0 +1,189 @@
+
+.indexnav {
+    color:                   #eee;
+    height:                  50px;
+    line-height:             50px;
+    border-bottom: 2px solid #ccc;
+    font-size:               150%;
+    margin-top:              20px;
+    display:                table;
+    width:                   100%;
+    @include border-bottom-radius(40px);
+}
+
+.indexnav > ul {
+    display:       table;
+    height:         100%;
+    padding:           0;
+    margin-bottom:     0;
+}
+
+.indexnav > ul > li {
+    display: table-cell;
+    height:        100%;
+
+}
+
+.indexnav > ul > li > a {
+    display: block;
+    color: #ccc;
+    font-family: 'Muli', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.indexnav > ul > li:first-child > a {
+    border-top: 2px solid transparent;
+    @include border-top-radius(50px);
+    border-left: 2px solid transparent;
+    @include border-left-radius(50px);
+}
+
+.indexnav > ul > li:nth-child(2) > a {
+    border-top: 2px solid transparent;
+}
+
+.indexnav > ul > li:nth-child(3) > a {
+    border-top: 2px solid transparent;
+    @include border-top-radius(50px);
+    border-right: 2px solid transparent;
+    @include border-right-radius(50px);
+}
+
+.indexnav > ul > li:first-child > a:hover {
+
+    border-top: 2px solid #ddd;
+    @include border-top-radius(50px);
+    border-left: 2px solid #ddd;
+    @include border-left-radius(50px);
+}
+
+.indexnav > ul > li:nth-child(2) > a:hover {
+
+    border-top: 2px solid #ddd;
+    @include border-top-radius(40px);
+}
+
+.indexnav > ul > li:nth-child(3) > a:hover {
+
+    border-top: 2px solid #ddd;
+    @include border-top-radius(50px);
+    border-right: 2px solid #ddd;
+    @include border-right-radius(50px);
+}
+
+
+.pos-relative {
+    height: 100px;
+    margin-top: -100px;
+    border: 1px solid red;
+}
+
+
+#flowerContainer {
+    position:                  relative;
+    top:                            0;
+    left:                           100%;
+    margin-left: -50px;
+    width:                          1px;
+    height:                         1px;
+    margin-top:  50px;
+    @include background-image(
+      linear-gradient(
+          rgba(255,255,255, 0.2),
+          rgba(255,255,255, 0.2)
+      )
+    );
+}
+
+.indexPetal {
+    position:                  absolute;
+    top:                              0;
+    left:                             0;
+    height:                        50px;
+    width:                         10px;
+    border-radius:      10% 90% 10% 95%;
+    border-bottom:       1px solid #fff;
+    border-left:         1px solid #eee;
+    margin:                        auto;
+    transform-origin:          left top;
+    opacity:                        0.8;
+    background-color: rgba(255,255,255, 0.2);
+    z-index:                         20;
+
+    @include background-image(
+      linear-gradient(
+          rgba(255,255,255, 0.4),
+          rgba(255,255,255, 0.2)
+      )
+    );
+}
+
+// start angle
+$indexAngleOffset: 193deg;
+$indexAngleStep: 15deg;
+
+// create petal ids and add animation
+@for $i from 1 through 24 {
+    #indexPetal#{$i} {
+        @include transform(rotate($indexAngleOffset + ( $indexAngleStep * $i )));
+    }
+}
+
+.jumbotron {
+    color:         #ccc;
+    height:        100%;
+    height:       100vh;
+    display:       flex;
+    align-items: center;
+    margin-bottom:    0;
+    background:    none;
+}
+
+html, body {
+    height: 100%;
+}
+
+
+$gradient-color-1: #ff7000;
+$gradient-color-2: #FF9000;
+
+body {
+
+    background: $gradient-color-2;
+
+    @include background-image(
+      radial-gradient(
+        at 0 0,
+        //   $gradient-color-1,
+          $gradient-color-2,
+          $gradient-color-1
+      )
+    );
+}
+
+
+div.index {
+    font-family: 'Muli', sans-serif;
+    font-size: 400%;
+    font-weight: 200;
+}
+
+div.index > div {
+    display: inline-block;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+
+    div.index {
+        font-size: 600%;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    div.index {
+        font-size: 800%;
+    }
+}
