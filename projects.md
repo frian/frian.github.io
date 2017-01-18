@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Home
-permalink: /
+permalink: /projects
 ---
 
 <article class="markdown-body" markdown="1">

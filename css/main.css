@@ -1,12 +1,12 @@
 /*
-Error: Invalid CSS after "...x-highlighting"": expected "{", was ""
+Error: Invalid CSS after "    "index"": expected "{", was ""
         on line 9 of /home/lpa/atinfo/projects/github/frian/src/_sass/./main.scss
 
-4: @import
-5: 	"base",
-6:     "layout",
-7:     "markdown",
-8:     "syntax-highlighting"
+4: @import "base",
+5:     "layout",
+6:     "markdown",
+7:     "syntax-highlighting",
+8:     "index"
 
 Backtrace:
 /home/lpa/atinfo/projects/github/frian/src/_sass/./main.scss:9
@@ -54,4 +54,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"...x-highlighting\"\": expected \"{\", was \"\"\A         on line 9 of /home/lpa/atinfo/projects/github/frian/src/_sass/./main.scss\A \A 4: @import\A 5: 	\"base\",\A 6:     \"layout\",\A 7:     \"markdown\",\A 8:     \"syntax-highlighting\""; }
+  content: "Error: Invalid CSS after \"    \"index\"\": expected \"{\", was \"\"\A         on line 9 of /home/lpa/atinfo/projects/github/frian/src/_sass/./main.scss\A \A 4: @import \"base\",\A 5:     \"layout\",\A 6:     \"markdown\",\A 7:     \"syntax-highlighting\",\A 8:     \"index\""; }

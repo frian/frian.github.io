@@ -40,8 +40,6 @@ cd profiles/default
 cp bash_customize_profile.sh.dist bash_customize_profile.sh
 ```
 
-   <!-- &nbsp; -->
-
    add your environment variable
 
    copy files from samples or add your own files to the profiles/default folder ( files must have .sh extension )
