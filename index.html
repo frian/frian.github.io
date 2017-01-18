@@ -2,20 +2,21 @@
 layout: default
 title: Home
 permalink: /
+body_class: index
 ---
 
 <div class="jumbotron">
     <div class="container-fluid">
 
         <div class="pos-relative">
-            <div id="flowerContainer">
+            <div id="logoContainer">
                 {% for i in (1..24) %}
                     <div id="indexPetal{{ i }}" class="indexPetal"></div>
                 {% endfor %}
             </div>
         </div>
 
-        <div class="index">
+        <div class="index-heading">
             <div>frian</div><div>@</div><div>github</div><div>.io</div>
         </div>
 
