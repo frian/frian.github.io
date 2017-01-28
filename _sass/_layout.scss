@@ -8,7 +8,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:500');
 
-@import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100,300,400');
 
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:100');
 
@@ -35,9 +35,19 @@ $border-color: #040;
 
 // navbar
 .navbar-default {
-    border-color: $border-color;
-    background-color: $sidebar-bg;
-    background-image: none;
+
+    border-color: red;
+
+    background: $gradient-color-2;
+
+    @include background-image(
+      radial-gradient(
+        at 0 0,
+          $gradient-color-2,
+          $gradient-color-1
+      )
+    );
+
     border-radius: 0;
 }
 
@@ -45,7 +55,7 @@ $border-color: #040;
 // -- top navbar links
 //
 .navbar-default .navbar-nav > li > a {
-    color: #ddd;
+    color: #eee;
     padding-left: 30px;
     line-height: 160%;
     font-size: 150%;
@@ -55,8 +65,8 @@ $border-color: #040;
 
 // -- hover
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
-    color: #eee;
-    background-color: #050;
+    color: #f9f9f9;
+    background-color: darken($gradient-color-1, 4%);
 }
 
 
@@ -123,6 +133,7 @@ ul {
     padding: 10px;
     font-family: 'Muli', sans-serif;
     font-size: 150%;
+
 }
 
 
@@ -143,7 +154,7 @@ ul {
     .sidebar {
         right: 0;
         left: auto;
-        background-color: #000;
+        // background-color: #000;
         display: table;
         height: 100%;
         width: 25%;

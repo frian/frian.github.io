@@ -4,8 +4,14 @@ body.index {
 }
 
 
-$gradient-color-1: #ff7000;
-$gradient-color-2: #FF9000;
+$fg-color: #eee;
+
+// $gradient-color-1: #ff6000;
+// $gradient-color-2: #FF8000;
+
+// old clearer gradient
+// $gradient-color-1: #ff7000;
+// $gradient-color-2: #FF9000;
 
 body.index {
 
@@ -25,7 +31,7 @@ body.index {
 // -- main container ----------------------------------------------------------
 //
 .jumbotron {
-    color:         #eee;
+    color:         $fg-color;
     height:        100%;
     height:       100vh;
     display:       flex;
@@ -58,10 +64,10 @@ div.index-heading > div {
 // -- navigation --------------------------------------------------------------
 //
 .indexnav {
-    color:                   #eee;
+    color:                   $fg-color;
     height:                  50px;
     line-height:             50px;
-    border-bottom: 2px solid #eee;
+    border-bottom: 2px solid $fg-color;
     font-size:               150%;
     display:                table;
     width:                   100%;
@@ -83,7 +89,7 @@ div.index-heading > div {
 
 .indexnav > ul > li > a {
     display: block;
-    color: #eee;
+    color: $fg-color;
     font-family: 'Muli', sans-serif;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -113,11 +119,11 @@ $menu-radius: 50px;
 }
 
 .indexnav > ul > li:first-child > a:hover {
-    border-color: #ddd;
+    border-color: $fg-color;
 }
 
 .indexnav > ul > li:nth-child(2) > a:hover {
-    border-color: #ddd;
+    border-color: $fg-color;
 }
 
 .indexnav > ul > li:nth-child(3) > a:hover {
@@ -158,7 +164,7 @@ $menu-radius: 50px;
     width:                         10px;
     border-radius:      10% 90% 10% 95%;
     border-bottom:       1px solid #fff;
-    border-left:         1px solid #eee;
+    border-left:         1px solid $fg-color;
     margin:                        auto;
     transform-origin:          left top;
     opacity:                        0.8;
