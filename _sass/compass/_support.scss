@@ -32,8 +32,8 @@ $browser-minimum-versions: (
 
 // @private
 $default-capability-options: (
-  (full-support: true),
-  (partial-support: true)
+  // (full-support: true),
+  // (partial-support: true)
 );
 
 // When a prefix in in context, but there is no current prefix
@@ -295,7 +295,7 @@ $css-sel2-support-threshold: $critical-usage-threshold !default;
 // using the `browser-ranges($capability, $prefix)` function.
 //
 // If there are current ranges in scope and the new ranges have some overlap
-// with the current, 
+// with the current,
 //
 // If there is no overlap, then the content will not be rendered.
 @mixin with-browser-ranges($capability, $prefix: $current-prefix) {

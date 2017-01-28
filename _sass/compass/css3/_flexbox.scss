@@ -16,13 +16,13 @@
 //         display: box,
 //         box-orient: vertical,
 //       ), $version: 1);
-//       
+//
 //       /* For flexbox spec v2 */
 //       @include flexbox((
 //         display: flexbox,
 //         flex-direction: column,
 //       ), $version: 2);
-//       
+//
 //       /* Latest Spec */
 //       @include flexbox((
 //         display: flex,
@@ -38,11 +38,11 @@
 //       -moz-box-orient: vertical;
 //       display: -webkit-box;
 //       -webkit-box-orient: vertical;
-//       
+//
 //       /* For flexbox spec v2 */
 //       display: -ms-flexbox;
 //       -ms-flex-direction: column;
-//       
+//
 //       /* Latest Spec */
 //       display: -webkit-flex;
 //       -webkit-flex-direction: column;
@@ -57,8 +57,8 @@ $flexbox-support-threshold: $critical-usage-threshold !default;
 
 // @private
 $flexbox-capability-options: (
-  (full-support: true),
-  (partial-support: true, spec-versions: 3)
+  // (full-support: true),
+  // (partial-support: true, spec-versions: 3)
 );
 
 // This is the underlying implementation for all the other mixins in this module.
