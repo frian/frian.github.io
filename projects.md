@@ -15,6 +15,7 @@ configurable and extendable bash customisation
 ![customize bash thumb](/img/01-customize-bash-thumb.png){:class="thumb"}
 
 
+
 ## fresh dark syntax
 
 a dark atom syntax theme for web developpment.

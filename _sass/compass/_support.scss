@@ -31,10 +31,10 @@ $browser-minimum-versions: (
 
 
 // @private
-$default-capability-options: (
+$default-capability-options: "";
   // (full-support: true),
   // (partial-support: true)
-);
+// );
 
 // When a prefix in in context, but there is no current prefix
 // That context is recorded here so other prefixes can be avoided.
