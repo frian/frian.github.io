@@ -1,28 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css?family=Lato:100');
-
-@import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700');
-
-
-@import url('https://fonts.googleapis.com/css?family=Quattrocento:400,700');
-
-@import url('https://fonts.googleapis.com/css?family=Raleway:500');
-
-@import url('https://fonts.googleapis.com/css?family=Yantramanav:100,300,400');
-
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:100');
-
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600');
-
-// @import "compass";
-@import "compass/css3/images";
-@import "compass/css3/transform";
-@import "compass/css3/border-radius";
-
-$sidebar-bg: #060;
-
-$border-color: #040;
-
 .sidebar {
     position: fixed;
     padding: 0;
@@ -58,12 +34,12 @@ $border-color: #040;
 // -- top navbar links
 //
 .navbar-default .navbar-nav > li > a {
-    color: #eee;
-    padding-left: 30px;
-    line-height: 160%;
-    font-size: 150%;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    color:          #eee;
+    padding-left:   30px;
+    line-height:    160%;
+    font-size:      150%;
+    padding-bottom:  5px;
+    padding-top:     5px;
 }
 
 // -- hover
@@ -85,7 +61,6 @@ $border-color: #040;
 .navbar-default .navbar-brand {
     color: #ddd;
     font-size: 150%;
-    // font-weight: 600;
 }
 
 // -- hover
@@ -130,19 +105,18 @@ ul {
 
 .content {
     margin-top: 50px;
-    padding: 10px;
+    padding:    10px;
+    font-size:  150%;
     font-family: 'Muli', sans-serif;
-    font-size: 150%;
-
 }
 
 
 #topbarLogoContainer {
-    position: relative;
+    position:    relative;
     width:            1px;
     height:           1px;
-    top: 10px;
-    left: 10px;
+    top:             10px;
+    left:            10px;
 }
 
 .topbarLogoPetal {
@@ -151,56 +125,52 @@ ul {
 }
 
 .topbarTitle {
-    top: 0;
     display: inline-block;
-    height: 20px;;
-    margin-left: 50px;
+    top:                0;
+    height:          20px;
+    margin-left:     50px;
 }
 
 
 @media (min-width: 768px) {
 
     .top-brand {
-        position: absolute;
-        z-index: 10000;
-        top: 0;
-        right: 0px;
-        padding: 20px 0;
-        width: 100%;
-        height: 80px;
-        // text-align: center;
-        // font-family: ‘Quattrocento’, serif;
-        // font-weight: 400;
+        position:                  absolute;
+        z-index:                      10000;
+        top:                              0;
+        right:                          0px;
+        padding:                     20px 0;
+        width:                         100%;
+        height:                        80px;
         border: 1px solid $gradient-color-1;
     }
 
     #sidebarLogoContainer {
         position: relative;
-        float: right;
-        top: 20px;
-        right: 50px;
+        float:       right;
+        top:          20px;
+        right:        50px;
     }
 
     .sidebarLogoPetal {
         height: 25px;
-        width:  5px;
+        width:   5px;
     }
 
     .sidebar {
-        right: 0;
-        left: auto;
-        // background-color: #000;
+        right:       0;
+        left:     auto;
         display: table;
-        height: 100%;
-        width: 25%;
+        height:   100%;
+        width:     25%;
     }
 
     .sidebarTitle {
-        top: 0;
-        display: inline-block;
-        height: 100%;
-        line-height: 36px;
-        margin-left: 10px;
+        display:     inline-block;
+        top:                    0;
+        height:              100%;
+        line-height:         36px;
+        margin-left:         10px;
     }
 
     .sidebar-navbar-collapse ul li {
@@ -208,22 +178,18 @@ ul {
     }
 
     .navbar {
-        display: table-cell;
-        vertical-align: middle;
+        display:        table-cell;
+        vertical-align:     middle;
     }
 
     .content {
-        margin-top: 0;
-        padding: 25px;
-    }
-
-    .navbar-default .navbar-brand {
-        // font-size: 180%;
+        margin-top:    0;
+        padding:    25px;
     }
 
     .navbar-default .navbar-nav > li > a {
-        font-size: 140%;
-        line-height: 120%;
+        font-size:    140%;
+        line-height:  120%;
         padding-left: 10px;
     }
 
@@ -232,7 +198,7 @@ ul {
 
 @media (min-width: 992px) {
     .content {
-        left: 0;
+        left:       0;
         padding: 50px;
     }
 }
@@ -242,11 +208,7 @@ ul {
     .sidebarTitle {
         line-height: 36px;
         margin-left: 20px;
-        font-size: 120%;
-    }
-
-    .navbar-default .navbar-brand {
-        // font-size: 300%;
+        font-size:   120%;
     }
 
     pre {
@@ -254,8 +216,8 @@ ul {
     }
 
     .navbar-default .navbar-nav > li > a {
-        font-size: 180%;
-        line-height: 120%;
+        font-size:    180%;
+        line-height:  120%;
         padding-left: 20px;
     }
 }
