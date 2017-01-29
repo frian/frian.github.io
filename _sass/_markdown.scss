@@ -84,12 +84,12 @@
 // -- image
 .markdown-body img {
     width: 100%;
+    margin-left: -10px;
 }
 
 .markdown-body img.thumb {
 
     margin-top: 20px;
-    margin-left: -15px;
 }
 
 // -- article heading
@@ -107,6 +107,7 @@
 
     .markdown-body img.thumb {
         width: auto;
+        max-width: 100%;
     }
 }
 @media (min-width: 1200px) {

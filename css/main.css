@@ -73,7 +73,8 @@ ul {
   margin-top: 50px;
   padding: 10px;
   font-size: 150%;
-  font-family: 'Muli', sans-serif; }
+  font-family: 'Muli', sans-serif;
+  background-color: #fff; }
 
 #topbarLogoContainer {
   position: relative;
@@ -215,11 +216,11 @@ ul {
   color: #ff6000; }
 
 .markdown-body img {
-  width: 100%; }
+  width: 100%;
+  margin-left: -10px; }
 
 .markdown-body img.thumb {
-  margin-top: 20px;
-  margin-left: -15px; }
+  margin-top: 20px; }
 
 .markdown-body .article-heading {
   margin-left: 20px;
@@ -230,7 +231,8 @@ ul {
 
 @media (min-width: 768px) {
   .markdown-body img.thumb {
-    width: auto; } }
+    width: auto;
+    max-width: 100%; } }
 @media (min-width: 1200px) {
   .markdown-body pre.highlight {
     padding: 20px 30px; } }
