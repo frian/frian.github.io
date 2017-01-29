@@ -39,7 +39,7 @@ $border-color: #040;
 // navbar
 .navbar-default {
 
-    border-color: green;
+    border: none;
 
     background: $gradient-color-2;
 
@@ -75,7 +75,7 @@ $border-color: #040;
 
 // - navbar border
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border-color: $border-color;
+    border-color: $gradient-color-1;
 }
 
 
@@ -104,12 +104,12 @@ $border-color: #040;
 // -- navbar toggle menu button
 //
 .navbar-default .navbar-toggle {
-    border-color: $border-color;
+    border-color: darken($gradient-color-1, 10%);
 }
 
 // -- hover
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color: $border-color;
+    background-color: darken($gradient-color-1, 10%);
 }
 
 // -- hamburger menu button
@@ -123,9 +123,6 @@ $border-color: #040;
     padding: 0;
 }
 
-.navbar-default .navbar-collapse > li > a {
-    color: red;
-}
 
 ul {
     width: 100%;
@@ -140,6 +137,27 @@ ul {
 }
 
 
+#topbarLogoContainer {
+    position: relative;
+    width:            1px;
+    height:           1px;
+    top: 10px;
+    left: 10px;
+}
+
+.topbarLogoPetal {
+    height: 20px;
+    width:  4px;
+}
+
+.topbarTitle {
+    top: 0;
+    display: inline-block;
+    height: 20px;;
+    margin-left: 50px;
+}
+
+
 @media (min-width: 768px) {
 
     .top-brand {
@@ -149,9 +167,23 @@ ul {
         right: 0px;
         padding: 20px 0;
         width: 100%;
-        text-align: center;
+        height: 80px;
+        // text-align: center;
         // font-family: ‘Quattrocento’, serif;
-        font-weight: 400;
+        // font-weight: 400;
+        border: 1px solid $gradient-color-1;
+    }
+
+    #sidebarLogoContainer {
+        position: relative;
+        float: right;
+        top: 20px;
+        right: 50px;
+    }
+
+    .sidebarLogoPetal {
+        height: 25px;
+        width:  5px;
     }
 
     .sidebar {
@@ -161,6 +193,14 @@ ul {
         display: table;
         height: 100%;
         width: 25%;
+    }
+
+    .sidebarTitle {
+        top: 0;
+        display: inline-block;
+        height: 100%;
+        line-height: 36px;
+        margin-left: 10px;
     }
 
     .sidebar-navbar-collapse ul li {
@@ -198,6 +238,12 @@ ul {
 }
 
 @media (min-width: 1200px) {
+
+    .sidebarTitle {
+        line-height: 36px;
+        margin-left: 20px;
+        font-size: 120%;
+    }
 
     .navbar-default .navbar-brand {
         // font-size: 300%;

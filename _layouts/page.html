@@ -19,11 +19,26 @@ layout: default
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <span class="visible-xs navbar-brand">{{ site.title }}</span>
+                    <span class="visible-xs navbar-brand">
+                        <div id="topbarLogoContainer">
+                            {% for i in (1..24) %}
+                                <div id="indexPetal{{ i }}" class="logoPetal topbarLogoPetal"></div>
+                            {% endfor %}
+                        </div>
+                        <span class="topbarTitle">{{ site.title }}</span>
+
+                    </span>
                 </div>
 
                 <div class="navbar-collapse collapse sidebar-navbar-collapse">
-                    <span class="hidden-xs navbar-brand top-brand">{{ site.title }}</span>
+                    <span class="hidden-xs navbar-brand top-brand">
+                        <div id="sidebarLogoContainer">
+                            {% for i in (1..24) %}
+                                <div id="indexPetal{{ i }}" class="logoPetal sidebarLogoPetal"></div>
+                            {% endfor %}
+                        </div>
+                        <span class="sidebarTitle">frian<span class="visible-md-inline visible-lg-inline">@github.io</span></span>
+                    </span>
                     <ul class="nav navbar-nav" id="sidenav01">
 
                         {% for p in site.pages %}
