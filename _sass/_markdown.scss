@@ -53,13 +53,11 @@
 .markdown-body h2 {
     margin: 30px 0;
     font-size: 200%;
-    // border-bottom: 1px solid #080;
     display: inline-block;
 }
 
 .markdown-body h2:after {
     height: 1px;
-    // margin: 10px auto;
 }
 
 
@@ -80,7 +78,7 @@
 
 // -- links
 .markdown-body a {
-    color: #040;
+    color: $gradient-color-1;
 }
 
 // -- image

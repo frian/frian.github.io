@@ -5,7 +5,7 @@ $(function() {
 
     $('.content').on('click', function(){
         console.log('run');
-        if($('.navbar-toggle').css('display') !='none'){
+        if($('.navbar-toggle').css('display') != 'none'){
             $(".navbar-toggle").trigger( "click" );
         }
     });

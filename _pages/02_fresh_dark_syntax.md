@@ -16,29 +16,29 @@ A dark atom syntax theme for web developpment.
 
 ### PHP
 
-![php](/img/01-fresh-dark.png)
+![php](/img/php.png)
 
 &nbsp;
 
 ### JavaScript
 
-![js](https://cloud.githubusercontent.com/assets/6443649/17086813/dc7c6c5a-51fb-11e6-88e3-4b37401836f6.png)
+![js](/img/js.png)
 
 &nbsp;
 
 ### css, less, scss
 
-![css, less, scss](https://cloud.githubusercontent.com/assets/6443649/17086817/edcbfc8c-51fb-11e6-9a57-1d71cf7e7169.png)
+![css, less, scss](/img/css.png)
 
 &nbsp;
 
 ### Twig
 
-![twig](https://cloud.githubusercontent.com/assets/6443649/17086820/047ecd1a-51fc-11e6-9b0a-b2fb6b166828.png)
+![twig](/img/twig.png)
 
 ## Install
 
-This repository is distributed with [apm][apm]. After [installing apm][install-apm], you can install `fresh-dark-syntax` with this command.
+This repository is distributed with [apm](https://atom.io/themes). After [installing apm](https://github.com/atom/apm#installing), you can install `fresh-dark-syntax` with this command.
 
 ```
 $ apm install fresh-dark-syntax
