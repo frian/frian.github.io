@@ -31,7 +31,8 @@
   line-height: 160%;
   font-size: 150%;
   padding-bottom: 5px;
-  padding-top: 5px; }
+  padding-top: 5px;
+  width: 100%; }
 
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
   color: #f9f9f9;
@@ -64,6 +65,9 @@
 
 ul {
   width: 100%; }
+
+#sidenav {
+  margin: 7.5px 0px; }
 
 .content {
   margin-top: 50px;
@@ -208,7 +212,7 @@ ul {
   margin-left: 20px; }
 
 .markdown-body a {
-  color: #040; }
+  color: #ff6000; }
 
 .markdown-body img {
   width: 100%; }
