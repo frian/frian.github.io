@@ -40,6 +40,8 @@
     font-size:      150%;
     padding-bottom:  5px;
     padding-top:     5px;
+    // border: 1px solid white;
+    width: 100%;
 }
 
 // -- hover
@@ -101,6 +103,10 @@
 
 ul {
     width: 100%;
+}
+
+#sidenav {
+    margin: 7.5px 0px;
 }
 
 .content {
