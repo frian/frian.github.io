@@ -12,7 +12,7 @@ permalink: /customize-bash/
 configurable and extendable bash customisation
 </div>
 
-![php](/img/01-customize-bash-2.png)
+![php](/img/01-customize-bash.png)
 
 ## features
 
