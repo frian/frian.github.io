@@ -40,7 +40,7 @@
 .markdown-body h1 {
     color: #222;
     padding : 10px 0 0;
-    font-size: 300%;
+    font-size: 200%;
 }
 
 .markdown-body h1:after {
@@ -95,13 +95,21 @@
 // -- article heading
 .markdown-body .article-heading {
     margin-left: 20px;
-    margin-bottom: 50px;
-    font-size: 200%;
+    margin-bottom: 30px;
+    font-size: 160%;
     font-weight: 300;
     // font-family: ‘Quattrocento’, serif;
     font-family: 'Yantramanav', sans-serif;
 }
 
+.markdown-body .article-heading-description {
+    margin-left: 20px;
+    margin-bottom: 30px;
+    font-size: 150%;
+    font-weight: 300;
+    // font-family: ‘Quattrocento’, serif;
+    font-family: 'Yantramanav', sans-serif;
+}
 
 @media (min-width: 768px) {
 
@@ -110,9 +118,31 @@
         max-width: 100%;
     }
 }
+
+@media (min-width: 992px) {
+
+    .markdown-body h1 {
+        font-size: 300%;
+    }
+
+    .markdown-body .article-heading {
+        font-size: 200%;
+    }
+
+    .content {
+        left:       0;
+        padding: 50px;
+    }
+}
+
 @media (min-width: 1200px) {
+
+    .markdown-body p {
+        font-size: 110%;
+    }
 
     .markdown-body pre.highlight {
         padding: 20px 30px;
     }
+
 }

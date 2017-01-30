@@ -12,7 +12,17 @@ permalink: /fresh-dark-syntax/
 A dark atom syntax theme for web developpment.
 </div>
 
-## screenshots
+<div class="article-heading-description" markdown="1">
+
+Targeted languages :
+
+PHP, Javascript, CSS, Less, Sass, Scss, HTML, Twig, Yaml, XML, Shell.
+
+</div>
+
+
+
+## Screenshots
 
 ### PHP
 
@@ -26,13 +36,13 @@ A dark atom syntax theme for web developpment.
 
 &nbsp;
 
-### css, less, scss
+### CSS, Less, Scss, Sass
 
 ![css, less, scss](/img/css.png)
 
 &nbsp;
 
-### Twig
+### html, Twig
 
 ![twig](/img/twig.png)
 

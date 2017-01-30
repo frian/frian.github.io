@@ -14,14 +14,14 @@ configurable and extendable bash customisation
 
 ![php](/img/01-customize-bash.png)
 
-## features
+## Features
 
 - colored prompt : local, ssh, telnet, root
 - colored grep, less
 - basic aliases
 - use aliases width sudo
 
-## setup
+## Setup
 
 ### 1. clone
 
@@ -52,7 +52,7 @@ cp bash_customize_profile.sh.dist bash_customize_profile.sh
 source customize-bash.sh
 ```
 
-## create a profile
+## Create a profile
 
 ### 1. create a profile dir
 
@@ -72,4 +72,11 @@ add needed files
 . customize-bash.sh newprofile
 ```
 
+## Changelog
+
+Check the [Changelog](CHANGELOG.md)
+
+## License
+
+[MIT](https://en.wikipedia.org/wiki/MIT_License)
 </article>
