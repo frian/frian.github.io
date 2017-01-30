@@ -18,11 +18,11 @@
 .navbar-default {
   border: none;
   background: #FF9000;
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjAiIGN5PSIwIiByPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZmY5MDAwIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmY2MDAwIi8+PC9yYWRpYWxHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjEwMCUiIGN5PSIwIiByPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZmY5MDAwIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmY2MDAwIi8+PC9yYWRpYWxHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
   background-size: 100%;
-  background-image: -moz-radial-gradient(0 0, at 0 0, #ff9000, #ff6000);
-  background-image: -webkit-radial-gradient(0 0, at 0 0, #ff9000, #ff6000);
-  background-image: radial-gradient(at 0 0 at 0 0, #ff9000, #ff6000);
+  background-image: -moz-radial-gradient(100% 0, at 100% 0, #ff9000, #ff6000);
+  background-image: -webkit-radial-gradient(100% 0, at 100% 0, #ff9000, #ff6000);
+  background-image: radial-gradient(at 100% 0 at 100% 0, #ff9000, #ff6000);
   border-radius: 0; }
 
 .navbar-default .navbar-nav > li > a {
@@ -55,6 +55,9 @@
   border-color: #cc4d00; }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: #cc4d00; }
+
+.navbar-default .navbar-nav > li > a.active {
   background-color: #cc4d00; }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -189,7 +192,7 @@ ul {
 .markdown-body h1 {
   color: #222;
   padding: 10px 0 0;
-  font-size: 300%; }
+  font-size: 200%; }
 
 .markdown-body h1:after {
   height: 2px;
@@ -224,8 +227,15 @@ ul {
 
 .markdown-body .article-heading {
   margin-left: 20px;
-  margin-bottom: 50px;
-  font-size: 200%;
+  margin-bottom: 30px;
+  font-size: 160%;
+  font-weight: 300;
+  font-family: 'Yantramanav', sans-serif; }
+
+.markdown-body .article-heading-description {
+  margin-left: 20px;
+  margin-bottom: 30px;
+  font-size: 150%;
   font-weight: 300;
   font-family: 'Yantramanav', sans-serif; }
 
@@ -233,7 +243,20 @@ ul {
   .markdown-body img.thumb {
     width: auto;
     max-width: 100%; } }
+@media (min-width: 992px) {
+  .markdown-body h1 {
+    font-size: 300%; }
+
+  .markdown-body .article-heading {
+    font-size: 200%; }
+
+  .content {
+    left: 0;
+    padding: 50px; } }
 @media (min-width: 1200px) {
+  .markdown-body p {
+    font-size: 110%; }
+
   .markdown-body pre.highlight {
     padding: 20px 30px; } }
 /**
