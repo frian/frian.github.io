@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Jekyll bootstrap template
-permalink: /jekyll-bootstrap-template/
+permalink: /jekyll-bootstrap-template-page/
 ---
 
 
