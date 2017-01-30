@@ -43,7 +43,7 @@ layout: default
 
                         {% for p in site.pages %}
                             {% if p.name contains '.md' %}
-                                <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+                                <li><a href="{{ p.url }}" {% if page.url == p.url %}class="active"{% endif %}>{{ p.title }}</a></li>
                             {% endif %}
                         {% endfor %}
                     </ul>
