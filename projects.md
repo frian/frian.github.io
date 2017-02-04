@@ -20,13 +20,13 @@ configurable and extendable bash customisation
 
 a dark atom syntax theme for web developpment.
 
-![customize bash thumb](/img/php.png){:class="thumb"}
+![fresh dark syntax thumb](/img/php.png){:class="thumb"}
 
 
 ## jekyll bootstrap template
 
 yet another jekyll bootstrap template
 
-![customize bash thumb](/img/01-jekyll-bootstrap.png){:class="thumb"}
+![jekyll bootstrap template thumb](/img/01-jekyll-bootstrap.png){:class="thumb"}
 
 </article>
