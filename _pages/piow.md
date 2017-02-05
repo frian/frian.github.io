@@ -19,7 +19,7 @@ A simple one page image gallery
 
 ## demo
 
-[here](https://frian.github.io/jekyll-bootstrap-template/)
+[here](http://piow.frian.org/)
 
 ## License
 
