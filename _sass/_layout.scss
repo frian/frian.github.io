@@ -149,14 +149,38 @@ ul {
     text-align: center;
     margin: 30px 0;
     line-height: 300%;
+    padding: 5px 0;
 }
+
 
 .pageTags {
-    // font-size: 150%;
-    // text-align: right;
+    font-size: 90%;
+    // text-align: center;
+    // margin: 30px 0;
+    line-height: 300%;
+    // padding: 5px 0;
 }
 
-.tags span, .pageTags span {
+.indexTags {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    font-size: 150%;
+    text-align: center;
+    margin: 30px 0;
+    line-height: 300%;
+    border: 1px solid white;
+}
+
+.pageTags span {
+    padding: 5px 10px;
+    margin: 0 5px;
+    color: $gradient-color-1;
+    border: 2px solid $gradient-color-1;
+    @include border-radius(10px);}
+
+.tags span {
     padding: 5px 10px;
     margin: 0 5px;
     color: $gradient-color-1;

@@ -25,4 +25,6 @@ A simple one page image gallery
 
 [MIT](https://en.wikipedia.org/wiki/MIT_License)
 
+{% include page_tags.html %}
+
 </article>

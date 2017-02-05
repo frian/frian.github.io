@@ -2,6 +2,7 @@
 layout: page
 title: Jekyll bootstrap template
 permalink: /jekyll-bootstrap-template-page/
+tags: [Jekyll, template, bootstrap, starter, web]
 ---
 
 <article class="markdown-body" markdown="1">
@@ -23,5 +24,7 @@ A minimal Jekyll template with a compiled bootstrap from CDN.
 ## License
 
 [MIT](https://en.wikipedia.org/wiki/MIT_License)
+
+{% include page_tags.html %}
 
 </article>
