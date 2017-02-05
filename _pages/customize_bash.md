@@ -2,6 +2,7 @@
 layout: page
 title: Customize bash
 permalink: /customize-bash/
+tags: [linux, shell, bash]
 ---
 
 <article class="markdown-body" markdown="1">

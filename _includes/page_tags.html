@@ -1,0 +1,10 @@
+<div class="tags">
+Tags :
+{% for tag in page.tags %}
+    {% if forloop.last %}
+    <span class="button">{{ tag }}</span>
+    {% else %}
+    <span>{{ tag }}, </span>
+    {% endif %}
+{% endfor %}
+</div>

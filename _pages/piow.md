@@ -2,6 +2,7 @@
 layout: page
 title: piow
 permalink: /piow/
+tags: [web, image, gallery]
 ---
 
 <article class="markdown-body" markdown="1">

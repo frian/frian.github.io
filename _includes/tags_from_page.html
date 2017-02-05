@@ -1,0 +1,14 @@
+<div class="tags">
+Tags :
+{% for page in site.pages %}
+    {% if page.name == include.pageName %}
+        {% for tag in page.tags %}
+            {% if forloop.last %}
+            <span class="button">{{ tag }}</span>
+            {% else %}
+            <span>{{ tag }}, </span>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+{% endfor %}
+</div>

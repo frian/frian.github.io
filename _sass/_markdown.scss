@@ -81,6 +81,14 @@
     color: $gradient-color-1;
 }
 
+.markdown-body h2 > a {
+    color: #222;
+}
+
+.markdown-body h2 > a:hover {
+    text-decoration: none;
+}
+
 // -- image
 .markdown-body img {
     width: 100%;

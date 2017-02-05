@@ -2,6 +2,7 @@
 layout: page
 title: Fresh dark syntax
 permalink: /fresh-dark-syntax/
+tags: [atom, web, developpment, theme]
 ---
 
 <article class="markdown-body" markdown="1">
