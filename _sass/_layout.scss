@@ -145,7 +145,23 @@ ul {
 
 
 .tags {
-    border: 1px solid red;
+    font-size: 90%;
+    text-align: center;
+    margin: 30px 0;
+    line-height: 300%;
+}
+
+.pageTags {
+    // font-size: 150%;
+    // text-align: right;
+}
+
+.tags span, .pageTags span {
+    padding: 5px 10px;
+    margin: 0 5px;
+    color: $gradient-color-1;
+    border: 2px solid $gradient-color-1;
+    @include border-radius(10px);
 }
 
 @media (min-width: 768px) {
@@ -207,6 +223,10 @@ ul {
         font-size:    140%;
         line-height:  120%;
         padding-left: 10px;
+    }
+
+    .tags span, .pageTags span {
+        padding: 10px 20px;
     }
 }
 

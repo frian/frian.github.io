@@ -1,5 +1,5 @@
-<div class="tags">
-Tags :
+<h2>Tags</h2>
+<p class="pageTags">
 {% for tag in page.tags %}
     {% if forloop.last %}
     <span class="button">{{ tag }}</span>
@@ -7,4 +7,4 @@ Tags :
     <span>{{ tag }}, </span>
     {% endif %}
 {% endfor %}
-</div>
+</p>

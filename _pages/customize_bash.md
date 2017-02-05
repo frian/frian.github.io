@@ -80,4 +80,7 @@ Check the [Changelog](CHANGELOG.md)
 ## License
 
 [MIT](https://en.wikipedia.org/wiki/MIT_License)
+
+{% include page_tags.html %}
+
 </article>
