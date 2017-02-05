@@ -99,17 +99,39 @@ ul {
 .tags {
   font-size: 90%;
   text-align: center;
-  margin: 30px 0;
-  line-height: 300%; }
+  line-height: 250%;
+  padding: 5px 0; }
+
+.pageTags {
+  text-align: left; }
 
 .tags span, .pageTags span {
   padding: 5px 10px;
-  margin: 0 5px;
+  margin: 0 2px;
   color: #ff6000;
   border: 2px solid #ff6000;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px; }
+
+.indexTagsContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 200px;
+  margin-left: -150px;
+  margin-top: 120px;
+  font-size: 110%; }
+
+.indexTagsContainer .tags span {
+  line-height: 250%;
+  color: #ddd;
+  border: 2px solid #ddd;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  font-size: 150%; }
 
 @media (min-width: 768px) {
   .top-brand {
@@ -163,7 +185,20 @@ ul {
     padding-left: 10px; }
 
   .tags span, .pageTags span {
-    padding: 10px 20px; } }
+    padding: 10px 20px; }
+
+  .indexTagsContainer {
+    width: 600px;
+    height: 200px;
+    margin-left: -300px;
+    margin-top: 120px;
+    font-size: 110%; }
+
+  .tags span, .pageTags span {
+    margin: 0 5px; }
+
+  .indexTagsContainer .tags span {
+    line-height: 300%; } }
 @media (min-width: 992px) {
   .content {
     left: 0;
@@ -434,7 +469,8 @@ body.index {
   background-size: 100%;
   background-image: -moz-radial-gradient(0 0, at 0 0, #ff9000, #ff6000);
   background-image: -webkit-radial-gradient(0 0, at 0 0, #ff9000, #ff6000);
-  background-image: radial-gradient(at 0 0 at 0 0, #ff9000, #ff6000); }
+  background-image: radial-gradient(at 0 0 at 0 0, #ff9000, #ff6000);
+  background-attachment: fixed; }
 
 .jumbotron {
   color: #eee;
