@@ -33,7 +33,7 @@ $(function() {
 
         img.src = $(this).attr("src");
 
-        $.disableScroll();
+        disableScroll.on();
 
         container.html(img);
 
@@ -44,7 +44,7 @@ $(function() {
 
         $("#imgFrame").remove();
 
-        $.enableScroll();
+        disableScroll.off();
     });
 
 });
