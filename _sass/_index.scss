@@ -32,6 +32,9 @@ body.index {
     background:    none;
 }
 
+.indexContainer {
+    margin-top: 90px;
+}
 
 //
 // -- frian@github.io ---------------------------------------------------------
@@ -181,6 +184,10 @@ $indexAngleStep: 15deg;
 
     .indexnav > ul > li > a {
         font-size: 100%;
+    }
+
+    .indexContainer {
+        margin-top: 300px;
     }
 }
 

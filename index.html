@@ -6,7 +6,7 @@ body_class: index
 ---
 
 <div class="jumbotron">
-    <div class="container-fluid">
+    <div class="container-fluid indexContainer">
 
         <div class="pos-relative">
             <div id="logoContainer">
@@ -22,14 +22,14 @@ body_class: index
 
         <div class="indexnav" role="navigation" style="width: 100%!important;">
             <ul>
-                <!-- <li class="text-center"><a href="/projects">projects</a></li>
-                <li class="text-center"><a href="#">about</a></li> -->
+                <li class="text-center"><a href="/projects">projects</a></li>
+                <li class="text-center"><a href="#">about</a></li>
             </ul>
         </div>
 
-    </div>
-</div>
+        <div class="indexTagsContainer hidden-xs">
+            {% include all_tags.html %}
+        </div>
 
-<div class="indexTagsContainer">
-    {% include all_tags.html %}
+    </div>
 </div>

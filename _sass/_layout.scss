@@ -186,14 +186,13 @@ ul {
 
 
 .indexTagsContainer {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 300px;
-    height: 200px;
-    margin-left: -150px;
-    margin-top: 120px;
-    font-size: 110%;
+
+    max-width: 600px;
+    height: 300px;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 80%;
+    // border: 1px solid white;
 }
 
 $indexTagsColor: #ddd;
@@ -274,10 +273,6 @@ $indexTagsColor: #ddd;
     }
 
     .indexTagsContainer {
-        width: 600px;
-        height: 200px;
-        margin-left: -300px;
-        margin-top: 120px;
         font-size: 110%;
     }
 
