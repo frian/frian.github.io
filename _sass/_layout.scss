@@ -144,7 +144,7 @@ ul {
 
 
 //
-// -- ags
+// -- tags
 //
 .tags {
     font-size:      90%;
@@ -153,6 +153,9 @@ ul {
     padding:      5px 0;
 }
 
+.tagsFromPage {
+    margin-left: 0!important;
+}
 
 .pageTags {
     text-align: left;
@@ -187,6 +190,28 @@ $indexTagsColor: darken($gradient-color-1, 15%);
     @include border-radius(10px);
 }
 
+
+
+
+$aboutContainerBorder: 1px solid $gradient-color-2;
+
+.aboutContainer {
+    font-family: 'Muli', sans-serif;
+    border: $aboutContainerBorder;
+    max-width: 600px;
+    background-color: rgba(153,153,153, 0.2);
+    padding-bottom: 20px;
+}
+
+.jumbotron .aboutContainer p {
+    font-weight: 300;
+}
+
+.aboutContainer h1 {
+    // color: red;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 300;
+}
 
 @media (min-width: 768px) {
 
@@ -249,6 +274,10 @@ $indexTagsColor: darken($gradient-color-1, 15%);
         padding-left: 10px;
     }
 
+    .tags {
+        line-height:   300%;
+    }
+
     .tags span, .pageTags span {
         padding: 10px 20px;
     }
@@ -264,6 +293,14 @@ $indexTagsColor: darken($gradient-color-1, 15%);
     .indexTagsContainer .tags span {
 
         line-height: 300%;
+    }
+
+    .jumbotron .aboutContainer p {
+        font-size: 200%;
+    }
+
+    .aboutContainer {
+        padding: 50px;
     }
 }
 
