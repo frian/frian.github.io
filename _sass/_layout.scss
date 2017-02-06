@@ -1,23 +1,22 @@
 
 .sidebar {
-    position: fixed;
-    padding: 0;
-    top: 0;
-    left: 0;
-    height: 50px;
-    width: 100%;
+    position:                 fixed;
+    padding:                      0;
+    top:                          0;
+    left:                         0;
+    height:                    50px;
+    width:                     100%;
+    font-weight:                300;
     font-family: 'Muli', sans-serif;
-    font-weight: 300;
-
 }
 
 
-// navbar
+// -- navbar
 .navbar-default {
 
-    border: none;
-
+    border:                  none;
     background: $gradient-color-2;
+    // border-radius: 0;
 
     @include background-image(
       radial-gradient(
@@ -26,9 +25,8 @@
           $gradient-color-1
       )
     );
-
-    border-radius: 0;
 }
+
 
 //
 // -- top navbar links
@@ -40,13 +38,13 @@
     font-size:      150%;
     padding-bottom:  5px;
     padding-top:     5px;
-    // border: 1px solid white;
-    width: 100%;
+    width:          100%;
 }
+
 
 // -- hover
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
-    color: #f9f9f9;
+    color:                                  #f9f9f9;
     background-color: darken($gradient-color-1, 4%);
 }
 
@@ -61,9 +59,10 @@
 // -- navbar brand
 //
 .navbar-default .navbar-brand {
-    color: #ddd;
+    color:     #ddd;
     font-size: 150%;
 }
+
 
 // -- hover
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
@@ -115,11 +114,11 @@ ul {
 }
 
 .content {
-    margin-top: 50px;
-    padding:    10px;
-    font-size:  150%;
-    font-family: 'Muli', sans-serif;
-    background-color: #fff;
+    margin-top:                     50px;
+    padding:                        10px;
+    font-size:                      150%;
+    background-color:               #fff;
+    font-family:      'Muli', sans-serif;
 }
 
 
@@ -133,22 +132,25 @@ ul {
 
 .topbarLogoPetal {
     height: 20px;
-    width:  4px;
+    width:   4px;
 }
 
 .topbarTitle {
-    display: inline-block;
-    top:                0;
-    height:          20px;
-    margin-left:     50px;
+    display:     inline-block;
+    top:                    0;
+    height:              20px;
+    margin-left:         50px;
 }
 
 
+//
+// -- ags
+//
 .tags {
-    font-size: 90%;
-    text-align: center;
-    line-height: 250%;
-    padding: 5px 0;
+    font-size:      90%;
+    text-align:  center;
+    line-height:   250%;
+    padding:      5px 0;
 }
 
 
@@ -156,54 +158,33 @@ ul {
     text-align: left;
 }
 
-// .indexTags {
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     position: absolute;
-//     font-size: 150%;
-//     text-align: center;
-//     margin: 30px 0;
-//     line-height: 300%;
-//     border: 1px solid white;
-// }
-
-// .pageTags span {
-//     padding: 5px 10px;
-//     margin: 0 5px;
-//     color: $gradient-color-1;
-//     border: 2px solid $gradient-color-1;
-//     @include border-radius(10px);
-// }
-
 .tags span, .pageTags span {
-    padding: 5px 10px;
-    margin: 0 2px;
-    color: $gradient-color-1;
-    border: 2px solid $gradient-color-1;
+    padding:                    5px 10px;
+    margin:                        0 2px;
+    color:             $gradient-color-1;
+    border:  2px solid $gradient-color-1;
     @include border-radius(10px);
 }
 
 
 .indexTagsContainer {
 
-    max-width: 600px;
-    height: 300px;
-    margin: auto;
-    margin-top: 10px;
-    font-size: 80%;
-    // border: 1px solid white;
+    max-width:  600px;
+    height:     300px;
+    margin:      auto;
+    margin-top:  50px;
+    font-size:    80%;
 }
 
-$indexTagsColor: #ddd;
+$indexTagsColor: darken($gradient-color-1, 15%);
 
 .indexTagsContainer .tags span {
 
-    line-height: 250%;
-    color: $indexTagsColor;
-    border: 2px solid $indexTagsColor;
+    line-height:                      250%;
+    color:                 $indexTagsColor;
+    border:      2px solid $indexTagsColor;
+    font-size:                        150%;
     @include border-radius(10px);
-    font-size: 150%;
 }
 
 
