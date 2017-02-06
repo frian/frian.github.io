@@ -213,6 +213,35 @@ $aboutContainerBorder: 1px solid $gradient-color-2;
     font-weight: 300;
 }
 
+
+
+img { cursor: pointer;}
+
+#imgFrame {
+	position : absolute;
+	top : 0;
+	width : 100%!important;
+	height : 100%!important;
+	background : rgba(0,0,0, .8);
+	z-index : 10;
+    text-align: center;
+    display: table;
+/* 	border : 1px solid red; */
+}
+
+#imgFrameContainer {
+    display: table-cell;;
+    vertical-align: middle;
+}
+
+#imgFrame img {
+    position: relative;
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+
 @media (min-width: 768px) {
 
     .top-brand {
