@@ -1,6 +1,9 @@
 /**
  * Syntax highlighting styles
  */
+
+$cyan: #00ffff;
+
 .highlight {
     background: #fff;
 
@@ -39,7 +42,7 @@
     .ne    { color: #900; font-weight: bold } // Name.Exception
     .nf    { color: #900; font-weight: bold } // Name.Function
     .nn    { color: #555 } // Name.Namespace
-    .nt    { color: #000080 } // Name.Tag
+    .nt    { color: $cyan } // Name.Tag
     .nv    { color: #008080 } // Name.Variable
     .ow    { font-weight: bold } // Operator.Word
     .w     { color: #bbb } // Text.Whitespace

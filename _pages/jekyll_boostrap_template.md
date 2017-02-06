@@ -17,7 +17,7 @@ A minimal Jekyll template with a compiled bootstrap from CDN.
 
 ![jekyll bootstrap template screenshot](/img/01-jekyll-bootstrap.png){:class="thumb"}
 
-## demo
+## Demo
 
 [here](https://frian.github.io/jekyll-bootstrap-template/)
 
