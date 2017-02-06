@@ -1,9 +1,12 @@
 ---
 layout: page
 title: Customize bash
-permalink: /customize-bash/
+project: customize-bash
+permalink: /customize-bash
 tags: [linux, shell, bash]
 ---
+
+{% include fork_me.html project=page.project %}
 
 <article class="markdown-body" markdown="1">
 

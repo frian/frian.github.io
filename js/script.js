@@ -11,7 +11,7 @@ $(function() {
     });
 
 
-    $(document).on("click", "img:not( #imgFrameContainer img )", function(e) {
+    $(document).on("click", ".markdown-body img:not( #imgFrameContainer img )", function(e) {
 
         // -- create the frame
         var frame = $("<div/>").attr('id', 'imgFrame');
