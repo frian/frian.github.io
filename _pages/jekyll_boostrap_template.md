@@ -1,9 +1,12 @@
 ---
 layout: page
 title: Jekyll bootstrap template
+project: jekyll-bootstrap-template
 permalink: /jekyll-bootstrap-template-page/
 tags: [Jekyll, template, bootstrap, starter, web]
 ---
+
+{% include fork_me.html project=page.project %}
 
 <article class="markdown-body" markdown="1">
 

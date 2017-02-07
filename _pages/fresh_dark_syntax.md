@@ -1,9 +1,12 @@
 ---
 layout: page
 title: Fresh dark syntax
+project: fresh-dark-syntax
 permalink: /fresh-dark-syntax/
 tags: [atom, web, developpment, theme]
 ---
+
+{% include fork_me.html project=page.project %}
 
 <article class="markdown-body" markdown="1">
 

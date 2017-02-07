@@ -146,7 +146,7 @@ ul {
   font-family: 'Yantramanav', sans-serif;
   font-weight: 300; }
 
-img {
+.markdown-body img {
   cursor: zoom-in; }
 
 #imgFrame {
