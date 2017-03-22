@@ -1,9 +1,12 @@
 ---
 layout: page
 title: Piow
+project: piow
 permalink: /piow/
 tags: [web, image, gallery]
 ---
+
+{% include fork_me.html project=page.project %}
 
 <article class="markdown-body" markdown="1">
 
