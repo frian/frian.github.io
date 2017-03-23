@@ -20,10 +20,21 @@ configurable and extendable bash customisation
 
 ## Features
 
+- easy management of multiple profiles
+- easy deployment on multiple machines
 - colored prompt : local, ssh, telnet, root
 - colored grep, less
 - basic aliases
 - use aliases width sudo
+
+## Usage
+
+```
+  usage : source customize-bash.sh [ -f startup_file ] [ profile ]
+
+    startup_file : .bash_profile, .bash_login, .profile, .bashrc (default)
+
+```
 
 ## Setup
 
@@ -33,7 +44,7 @@ configurable and extendable bash customisation
 git clone https://github.com/frian/customize-bash.git
 ```
 
-or [download](https://github.com/frian/customize-bash/archive/master.zip)
+or [download](https://github.com/frian/customize-bash/archive/v1.1.0.tar.gz)
 
 &nbsp;
 
@@ -78,7 +89,7 @@ add needed files
 
 ## Changelog
 
-Check the [Changelog](CHANGELOG.md)
+Check the [Changelog](https://github.com/frian/customize-bash/blob/master/CHANGELOG.md)
 
 ## License
 
