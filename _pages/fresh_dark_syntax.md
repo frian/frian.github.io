@@ -66,7 +66,7 @@ After installation, you can enable this theme in your [Atom theme settings](http
 
 ## Changelog
 
-Check the [Changelog](CHANGELOG.md)
+Check the [Changelog](https://github.com/frian/fresh-dark-syntax/blob/master/CHANGELOG.md)
 
 ## License
 
